@@ -1,0 +1,5 @@
+{
+    "extends": "./tsconfig.json",
+    "include": ["src", "**/*.spec.ts", "**/*/*.js"],
+    "exclude": ["node_modules", "src/database//migrations/*"]
+}
