@@ -20,7 +20,7 @@
     "migrate:down": "run-s build && ts-node ./node_modules/typeorm/cli.js migration:revert -d ./dist/database/data-source.js",
     "migration:generate": "run-s build && ts-node ./node_modules/typeorm/cli.js migration:generate -d ./src/database/data-source",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "npm run migrate && NODE_ENV=test jest",
+    "test": "NODE_ENV=test jest",
     "test:cov": "SET NODE_ENV=test && npm run migrate && NODE_ENV=test jest --coverage",
     "test:watch": "SET NODE_ENV=test && jest --watch",
     "jest": "SET NODE_ENV=test && jest",
